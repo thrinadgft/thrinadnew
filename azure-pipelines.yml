@@ -23,6 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
+        containerRegistry: 'thrinad-docker'
         repository: 'in28-hello-world'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
